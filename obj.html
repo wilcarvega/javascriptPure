@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src=" https://unpkg.com/xlsx@latest/dist/xlsx.full.min.js"></script>
+  <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
+  <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="obj.css">
+  <title></title>
+</head>
+<body onload="setInterval(tiempo,1000)">
+  
+  <div class="reune">
+    <div id="cabecera">
+      <div id="aviso"></div>
+      <div id="titulo" style="display: inline-block;"><h5>MANIPULACION DE OBJETOS</h5></div>
+      <div id="fecha">
+        <button id="pfull" onclick="openFullscreen()">full</button>
+        <button id="cfull" onclick="closeFullscreen()">Close</button>
+      </div>
+      
+    </div>
+    <div id="operacion">
+      <div class="forme">
+        <form id="demo">
+         <label for="nom"class="form-label">Nombre :</label>
+         <input  id="nm" type="text" name="nom"class="form-control" >
+         <label for="age"class="form-label">Edad :</label>
+         <input  id="ag" type="text" name="age"class="form-control">
+         <label for="cty"class="form-label">Ciudad :</label>
+         <input  id="cy" type="text" name="cty"class="form-control">
+         
+       </form>
+     </div>
+     
+     <div id="contetabla"class="result">
+        <table  id="tabla">
+          <thead >
+            <tr id="head">
+             <th>NOMBRE</th>
+             <th>EDAD</th>
+             <th>CIUDAD</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo">
+            
+          </tbody>
+       </table>
+      </div> 
+      <div class="contecanvas">
+        <canvas id="mireport" width="400" height="600"></canvas>
+        
+      </div>
+      
+    </div>  
+    <div id="botones">
+          <div id="contador"></div>
+          <div><button id="btn" class="btn btn-primary">Guardar</button> </div>
+          <div><button id="mos" class="btn btn-success">Mostrar</button></div>
+          <div id="fdate"></div>
+          <div></div>
+          <div id="hora"></div>
+          <div><button id="prn">Exportar Pdf</button></div>
+          <div></div>
+          <div><button id="canvas" class="btn btn-secondary">Previsualizar</button></div>
+          <div><button id="btnExportar" type="button">Exportar Excel</button></div>
+               
+     </div>    
+ </div>  
+ <canvas id="pdf" width="700" height="792"></canvas>
+ <script src="obj.js"> </script>
+ 
+</body>
+</html>
+
+
+
+

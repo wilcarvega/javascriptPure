@@ -1,0 +1,259 @@
+.reune{ background:#008080;
+		display:block;
+		color:white;
+		width:99,9%;
+		height:550px;
+		margin-left:10px;
+		margin-top: 5px;
+		padding-left:1px;
+		border: 8px double white;
+	}
+#cabecera{
+	float: top;
+	width: 100%;
+	height: 12%;
+	display: inline-block;
+	text-align: center;
+	background-color: #4DB6FF ;
+	padding: 5px;
+	margin-bottom:3px;
+}
+.forme{display: inline-block;
+	   padding:10px;
+	   border: 2px solid #70FF4D;
+	   border-radius: 10px;
+	   height: 250px;
+	   box-sizing: border-box;
+	   margin-left:2px;
+	   margin-bottom: 38px;
+	   float: left;
+	}
+#contetabla{
+	display: inline-block;
+	padding: 0px 8px 8px 8px;
+	border: 2px solid #70FF4D;
+	margin: 2px;
+	box-sizing:border-box;
+	height: 250px;
+	width: 555px;
+	border-radius: 10px;
+	float: left;
+	overflow: auto;
+ }
+
+#tabla{
+	float: right;
+	}
+
+#aviso{
+display: inline-block;
+width:15%;
+}
+
+#fecha{
+width: auto;
+display: inline-block;
+border: 1px solid red;
+top: opx;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+#titulo{
+	display: inline-block;
+	width: 60%;
+}
+
+.aviso{
+	text-align: center;
+	font-size: 12px;
+	visibility:show;
+	display: inline-block;
+	float: left;
+	background-color: red;
+	color: white;
+	border-radius: 20px;
+}
+
+#botones{width: 100%;
+	      	display: grid;
+  				grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px; 
+  				column-gap:15px;
+  				margin-bottom:2px;
+  				margin-left: auto;
+  				margin-right:auto;
+  				padding: 8px;
+  				border: 1px solid #70FF4D;
+  				border-radius: 10px;
+  				margin-top:15px;
+
+  			}
+
+input{width: 80%;}
+#btnExportar{
+	color: white;
+	background-color: indigo;
+	padding: 8px;
+	width: 150px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 50px;
+}
+
+#prn{
+	color: white;
+	background-color: yellowgreen;
+	padding: 8px;
+	width: 150px;
+	border-radius: 10px;
+	border: none;
+	margin-right: 5px;
+	margin-left: 20px;
+}
+
+
+button{margin-top: 18px;margin-right: 5px;}
+
+#tabla {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  
+}
+
+#tabla td, #datos th {
+  border: 1px solid #ddd;
+  padding: 2px;
+  text-align: center;
+}
+
+
+
+#tabla tr:nth-child(even){background-color: #f2f2f2;}
+
+#tabla tr:hover {background-color: #00FF00;color: black;cursor:pointer;}
+td{font-size: 12px}
+
+#head{
+	position: sticky;
+	top: 0px;
+}
+
+
+#tabla th {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  background-color: #04AA6D;
+  font-size: 12px;
+  color: white;
+  width: 100px;
+
+}
+#mireport{
+	background-color: white;
+	border-radius: 10px;
+	border: 2px solid blue;
+
+}
+
+.contecanvas{
+	display: inline-block;
+	padding: 8px;
+	border: 2px solid #70FF4D;
+	margin-left:2px;
+	margin-right:1px;
+	box-sizing:border-box;
+	height: 340px;
+	width: 440px;
+	border-radius: 10px;
+	float: left;
+	overflow: auto;
+	color:white;
+	background: #008080;
+	
+}
+
+#operacion{
+	display: inline-block;
+}
+
+#contetabla::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+#contetabla::-webkit-scrollbar:vertical {
+    width:10px;
+}
+/*#contetabla::-webkit-scrollbar-button:increment,*/
+#contetabla::-webkit-scrollbar-button {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+
+} 
+
+#contetabla::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#contetabla::-webkit-scrollbar-track {
+    border-radius: 10px;  
+}
+
+
+
+
+
+.contecanvas::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.contecanvas::-webkit-scrollbar:vertical{
+	width: 10px;
+}
+
+.contecanvas::-webkit-scrollbar-button {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+
+} 
+
+.contecanvas::-webkit-scrollbar-track {
+    border-radius: 10px; 
+     
+}
+
+.contecanvas::-webkit-scrollbar-thumb {
+    background-color: #797979;
+    border-radius: 20px;
+    border: 2px solid #f1f2f3;
+}
+
+#pdf{
+	display: none;
+	border: 20px solid red;
+}
+
+#pfull{
+	margin-bottom: 8px;
+	margin-top: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#cfull{
+	margin-bottom: 8px;
+	margin-top: 5px;
+	margin-left: 8px;
+	margin-right: 8px;
+    padding-left: 10px;
+	padding-right: 10px;
+}
